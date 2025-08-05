@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "yt-dlp-ext",
+    "version": "0.0.1",
+  
+    "description": "Ok sure",
+    "homepage_url": "https://mattcoding.com",
+    "icons": {
+      "48": "icons/friend.png"
+    },
+  
+    "permissions": ["<all_urls>","activeTab","tabs","scripting","webNavigation"],
+  
+    "browser_action": {
+      "default_icon": "icons/friend.png",
+      "default_title": "this button does nothing."
+    },
+
+    "background": {
+      "scripts": ["content_scripts/main.js"]
+    }
+  }
