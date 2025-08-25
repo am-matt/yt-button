@@ -1,18 +1,18 @@
 {
     "manifest_version": 2,
-    "name": "yt-dlp-ext",
+    "name": "yt-button",
     "version": "0.0.1",
   
-    "description": "Ok sure",
+    "description": "An extension that adds a button to YouTube",
     "homepage_url": "https://mattcoding.com",
     "icons": {
-      "48": "icons/friend.png"
+      "48": "icons/smallcat.jpg"
     },
   
     "permissions": ["<all_urls>","activeTab","tabs","scripting","webNavigation"],
   
     "browser_action": {
-      "default_icon": "icons/friend.png",
+      "default_icon": "icons/smallcat.jpg",
       "default_title": "this button does nothing."
     },
 

@@ -17,7 +17,7 @@ if (window.contentScriptInjected !== true) {
 
         const iconLink = document.createElement("link");
         iconLink.rel = "stylesheet";
-        iconLink.href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0&icon_names=download";
+        iconLink.href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search";
         document.head.append(iconLink);
     }
 
@@ -54,11 +54,10 @@ if (window.contentScriptInjected !== true) {
 
             const icon = document.createElement("span");
             icon.className = "material-symbols-outlined";
-            icon.innerText = "download";
+            icon.innerText = "search";
             innerButtonDiv.appendChild(icon);
 
             newButton.appendChild(innerButtonDiv);
-            console.log("appending this thing???");
             outerButton.appendChild(newButton);
             menuFrame.appendChild(outerButton);
         }
